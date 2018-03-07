@@ -25,3 +25,43 @@ h1 {
   margin: 36px 0px 54px 0px;
   text-align: center;
 }
+h3 {
+  font-size: 24px;
+  font-weight: 800;
+}
+.positive {
+  color: #2ecc71;
+}
+.negative {
+  color: #ff5b71;
+}
+.positive::after,
+.negative::after {
+  font-size: 13px;
+}
+.positive::after {
+  content: '\25b2';
+}
+.negative::after {
+  content: '\25bc';
+}
+
+#lastDay {
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.inner-container {
+  min-width: 33.33%;
+  text-align: center;
+}
