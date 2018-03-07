@@ -1,0 +1,27 @@
+body {
+  background-color: #042146;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", 
+               "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+#logo {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0 10%;
+  text-transform: uppercase;
+}
+#price-explainer {
+  text-align: center;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 81px;
+  font-weight: 800;
+  margin: 36px 0px 54px 0px;
+  text-align: center;
+}
