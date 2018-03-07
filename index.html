@@ -11,7 +11,7 @@
 
   <title>Nimiq price - simple and mobile friendly</title>
   <link rel="stylesheet" media="all" href="assets/stylesheets/main.css" />
-  <script src="assets/javascript/main.js"></script>
+  <script src="assets/javascript/main.js" async></script>
 </head>
 <body>
   <span id="logo">NIMIQPRICE</span>
@@ -22,6 +22,8 @@
   <div class="container">
     <div class="inner-container">
       <h3>Price ETH</h3>
+      <p id="price-eth"></p>
+      <p>0.0057143 ETH (ICO price)</p>
     </div>
     <div class="inner-container">
       <h3>7 Day Change</h3>
@@ -29,10 +31,13 @@
     </div>
     <div class="inner-container">
       <h3>Market Cap</h3>
+      <p id="marketcap"></p>
     </div>
 
     <div class="inner-container">
       <h3>Price BTC</h3>
+      <p id="price-btc"></p>
+      <p>0.0001920 BTC (ICO price)</p>
     </div>
     <div class="inner-container">
       <h3>1 Hour Change</h3>
@@ -40,6 +45,7 @@
     </div>
     <div class="inner-container">
       <h3>Price NIM</h3>
+      <p id="nim-value"></p>
     </div>
   </div>
 </body>
