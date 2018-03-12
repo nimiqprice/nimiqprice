@@ -68,3 +68,7 @@ function fetchEthPrice(nimiqPriceUsd) {
 }
 
 fetchNimiqPrice()
+
+setInterval(function() {
+  window.location.reload();
+}, 180000);
