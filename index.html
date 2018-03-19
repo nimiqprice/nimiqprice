@@ -17,7 +17,12 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/images/site.webmanifest">
   <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-config" content="/assets/images/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
 
   <title>Nimiq price - simple and mobile friendly</title>
   <meta name="description" content="Nimiq (NET & NIM) price updated in real-time every minute.
@@ -27,6 +32,7 @@
 </head>
 <body>
   <span id="logo">NIMIQPRICE</span>
+  <img id="offline" style="display: none;" src="assets/images/offline.svg" />
   <p id="price-explainer">1 NET =</p>
   <h1 id="price-usd">&nbsp;</h1>
   <h2 id="lastDay">&nbsp;</h2>

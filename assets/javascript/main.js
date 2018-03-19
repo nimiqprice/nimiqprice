@@ -72,3 +72,21 @@ fetchNimiqPrice()
 setInterval(function() {
   window.location.reload();
 }, 180000);
+
+// Check that service workers are registered
+if ('serviceWorker' in navigator) {
+  // Use the window load event to keep the page load performant
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js');
+
+    // Offline icon
+    var offline = document.getElementById("offline");
+    function updateOnlineStatus(event) {
+      var condition = navigator.onLine ? "none" : "block";  
+      offline.style.display = condition;
+    }
+    window.addEventListener('online',  updateOnlineStatus);
+    window.addEventListener('offline', updateOnlineStatus);
+    updateOnlineStatus();
+  });
+}
