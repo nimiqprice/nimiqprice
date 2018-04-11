@@ -22,7 +22,6 @@ function fetchNimiqPrice() {
       })
 
       document.getElementById('marketcap').textContent = prettyMarketCap(totalMarketCap)
-      document.getElementById('nim-value').textContent = `$${priceOfNim(nimiqPriceUsd)}`
       document.getElementById('price-btc').textContent = `${priceBtc} BTC`
 
       fetchEthPrice(nimiqPriceUsd)
@@ -51,9 +50,6 @@ function prettyMarketCap(marketcap) {
   return `$${marketCapInMillions} Million`
 }
 
-function priceOfNim(netPrice) {
-  return parseFloat(netPrice / 100.0).toFixed(3)
-}
 
 function fetchEthPrice(nimiqPriceUsd) {
   fetch('https://api.coinmarketcap.com/v1/ticker/ethereum/')
